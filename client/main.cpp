@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <ctime>
-using namespace std;
 
 // takes the hostname and a port number
 int main(int argc, char** args){
@@ -9,26 +8,27 @@ int main(int argc, char** args){
 	time_t now = time(0);
 	char* dt = ctime(&now);
 
-	cout << "CHATCLIENT" << "                                          " << dt;
-	cout << "----------------------------------------------------------------------------" << "|" << endl;
+	std::cout << "CHATCLIENT" << "                                          " << dt;
+	std::cout << "----------------------------------------------------------------------------" << "|" << std::endl;
 	if(argc < 3){
-		cout << "No hostname and port." << endl;
+		std::cout << "No hostname and port." << std::endl;
 		return 0;
 	}
-	
+
 	// print the input
-	cout << "HOST: " << args[1] << endl << "PORT: " <<  args[2] << endl;
+	std::cout << "HOST: " << args[1] << std::endl;
+	std::cout << "PORT: " <<  args[2] <<std::endl;
 
 	// get the host and port
-	string HOST = args[1];
+	std::string HOST = args[1];
 	int port  = atoi(args[2]);
 
 	// default the port
 	if(port == 0) port = 7777;
 
 	// check for error on input
-	cout << HOST << endl;
-	cout << port << endl;
+	std::cout << HOST << std::endl;
+	std::cout << port << std::endl;
 
 	// exit
 	return 1;
