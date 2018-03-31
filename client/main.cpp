@@ -12,7 +12,7 @@ int main(int argc, char** args){
 	std::cout << "----------------------------------------------------------------------------" << "|" << std::endl;
 	if(argc < 3){
 		std::cout << "No hostname and port." << std::endl;
-		return 0;
+		return 1;
 	}
 
 	// print the input
@@ -31,5 +31,5 @@ int main(int argc, char** args){
 	std::cout << port << std::endl;
 
 	// exit
-	return 1;
+	return 0;
 }
