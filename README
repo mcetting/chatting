@@ -1,4 +1,4 @@
-Chat Software
+# Chat Software
 -----------------------------------------------------------
 Description:
 This is a program im making in my free time to learn proper socketed networking with possible multithreading. Right now the plan for the project is to be able to send and recieve messages across computers. After that i will probably work on either a GUI or the ability to send more than just text messages ie pictures and emojis. Maybe i can make it work with file transfer because ive worked on something similar before.
