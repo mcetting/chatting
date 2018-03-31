@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void main(){
+int main(){
 	cout << "Using the dev branch" << endl;
+	return 0;
 }
